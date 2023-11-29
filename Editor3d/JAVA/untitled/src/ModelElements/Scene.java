@@ -1,26 +1,33 @@
 package ModelElements;
 
-import java.lang.reflect.Type;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Scene {
     static AtomicInteger nextId = new AtomicInteger();
     public int id;
-    public PolygonalModel models;
+    public List<PolygonalModel> models;
     public List<Flash> flashes;
     public List<Camera> cameras;
-    public Type method1(Type type){
-        return type;
+    public <T>T method1(T flash){
+        return flash;
     }
-    public Type method2(Type t1, Type t2){
-        return t2;
+    public <T> T method2(T model, T flash){
+        return model;
     }
 
-    public Scene(PolygonalModel models, List<Flash> flashes, List<Camera> cameras) {
-        this.models = models;
+    public Scene(List<PolygonalModel> models, List<Flash> flashes, List<Camera> cameras) throws Exception {
+        if(!models.isEmpty()) {
+            this.models = models;
+        }else{
+            throw new Exception("Должна быть одна модель");
+        }
         this.flashes = flashes;
-        this.cameras = cameras;
+        if(!cameras.isEmpty()) {
+            this.cameras = cameras;
+        }else {
+            throw new Exception("Должна быть одна модель");
+        }
         this.id = nextId.incrementAndGet();
     }
 }

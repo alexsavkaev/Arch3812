@@ -1,4 +1,4 @@
-package Stuff;
+package ModelElements;
 
 public class Texture {
 }

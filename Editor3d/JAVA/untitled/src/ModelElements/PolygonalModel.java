@@ -1,6 +1,4 @@
 package ModelElements;
-import Stuff.Polygon;
-import Stuff.Texture;
 
 import java.util.ArrayList;
 import java.util.List;
