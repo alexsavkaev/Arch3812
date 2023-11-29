@@ -5,7 +5,4 @@ public class Dirt extends ItemReward{
     public void open() {
         System.out.println("Dirt!");
     }
-    public Dirt() {
-        rarity = 10;
-    }
 }

@@ -6,7 +6,4 @@ public class Gold extends ItemReward{
     public void open() {
         System.out.println("Gold!");
     }
-    public Gold() {
-        rarity = 3;
-    }
 }

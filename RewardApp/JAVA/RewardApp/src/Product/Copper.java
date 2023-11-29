@@ -5,8 +5,4 @@ public class Copper extends ItemReward{
     public void open() {
         System.out.println("Copper!");
     }
-
-    public Copper() {
-        rarity = 10;
-    }
 }
