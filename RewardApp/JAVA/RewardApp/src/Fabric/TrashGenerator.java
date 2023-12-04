@@ -8,4 +8,7 @@ public class TrashGenerator extends ItemGenerator{
     public iGameItem createItem() {
         return new Trash();
     }
+    public TrashGenerator() {
+        this.rarity = 10;
+    }
 }

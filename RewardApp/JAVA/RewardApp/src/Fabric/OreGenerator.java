@@ -8,4 +8,8 @@ public class OreGenerator extends ItemGenerator{
     public iGameItem createItem() {
         return new Ore();
     }
+
+    public OreGenerator() {
+        this.rarity = 10;
+    }
 }

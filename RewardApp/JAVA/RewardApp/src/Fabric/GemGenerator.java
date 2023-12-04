@@ -8,4 +8,7 @@ public class GemGenerator extends ItemGenerator{
     public iGameItem createItem() {
         return new Gem();
     }
+    public GemGenerator() {
+        this.rarity = 1;
+    }
 }

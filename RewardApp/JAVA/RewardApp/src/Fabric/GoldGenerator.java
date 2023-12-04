@@ -8,4 +8,7 @@ public class GoldGenerator extends ItemGenerator{
     public iGameItem createItem() {
         return new Gold();
     }
+    public GoldGenerator() {
+        this.rarity = 3;
+    }
 }

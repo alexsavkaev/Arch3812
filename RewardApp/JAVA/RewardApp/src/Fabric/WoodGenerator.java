@@ -8,4 +8,7 @@ public class WoodGenerator extends ItemGenerator{
     public iGameItem createItem() {
         return new Wood();
     }
+    public WoodGenerator() {
+        this.rarity = 10;
+    }
 }

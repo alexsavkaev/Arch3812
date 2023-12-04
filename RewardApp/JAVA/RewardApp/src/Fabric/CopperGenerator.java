@@ -8,4 +8,7 @@ public class CopperGenerator extends ItemGenerator{
     public iGameItem createItem() {
         return new Copper();
     }
+    public CopperGenerator() {
+        this.rarity = 10;
+    }
 }

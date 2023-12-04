@@ -8,4 +8,7 @@ public class DirtGenerator extends ItemGenerator{
     public iGameItem createItem() {
         return new Dirt();
     }
+    public DirtGenerator() {
+        this.rarity = 10;
+    }
 }
