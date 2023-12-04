@@ -5,4 +5,7 @@ public class Trash extends ItemReward{
     public void open() {
         System.out.println("Trash!");
     }
+    public Trash() {
+        rarity = 10;
+    }
 }

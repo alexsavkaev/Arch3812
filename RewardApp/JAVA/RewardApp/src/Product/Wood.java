@@ -5,4 +5,7 @@ public class Wood extends ItemReward{
     public void open() {
         System.out.println("Wood!");
     }
+    public Wood() {
+        rarity = 10;
+    }
 }

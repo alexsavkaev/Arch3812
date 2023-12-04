@@ -5,4 +5,7 @@ public class Ore extends ItemReward{
     public void open() {
         System.out.println("Ore!");
     }
+    public Ore() {
+        rarity = 10;
+    }
 }

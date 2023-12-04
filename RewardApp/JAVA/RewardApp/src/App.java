@@ -1,4 +1,5 @@
 import Fabric.*;
+import Product.ItemReward;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,13 +9,13 @@ import java.util.concurrent.ThreadLocalRandom;
 public class App {
     public static void main(String[] args) {
         List<ItemGenerator> generators = new ArrayList<>();
-        iFill(generators, new GemGenerator(), 1);
-        iFill(generators, new GoldGenerator(), 3);
-        iFill(generators, new CopperGenerator(), 10);
-        iFill(generators, new DirtGenerator(), 10);
-        iFill(generators, new OreGenerator(), 10);
-        iFill(generators, new WoodGenerator(), 10);
-        iFill(generators, new TrashGenerator(), 10);
+        iFill(generators, new GemGenerator(), ItemReward.rarity);
+        iFill(generators, new GoldGenerator(), ItemReward.rarity);
+        iFill(generators, new CopperGenerator(), ItemReward.rarity);
+        iFill(generators, new DirtGenerator(), ItemReward.rarity);
+        iFill(generators, new OreGenerator(), ItemReward.rarity);
+        iFill(generators, new WoodGenerator(), ItemReward.rarity);
+        iFill(generators, new TrashGenerator(), ItemReward.rarity);
         Random random = ThreadLocalRandom.current();
         for (int i = 0; i < 1000; i++) {
             int index = random.nextInt(generators.size());
